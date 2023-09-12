@@ -77,25 +77,15 @@ Once configured, the MySQL Backup Script will run automatically according to you
 
 ```db_username:``` Mysql username, As an example ```adel```, ```root``` is a default username for mysql.
 
-```db_pass:``` Mysql password, As an example ```databse_pass```.
+```db_pass:``` Mysql password, As an example ```database_pass```.
 
 ### Assests ENV
 
-```assets_prefixname:``` It is just a prefix name for better managing Backup files. As an example ```assetbackup```.
+```backend_container_name:``` Your backend container name, for example ```back_container```.
 
-```assets_host_volume:``` This is your assets files location on the server, this location is mounted with your project assets location on a docker container, like the below code in a docker-compose file:
+```assets_volume_location:``` This is your assets files location on the container.
 
-```
-volumes:
-  - /srv/adel-assets:/app/public/uploads:z  ### assets_host_volume:/srv/adel-assets
-```
-
-```assets_dir_name:```Your assets directory name, for instance ```adel-assets```.
-
-> **Note**
-> 
-> Your ```assets_dir_name``` must be the same with the ```assets_host_volume``` directory. For example, if your ```assets_host_volume``` is ```/srv/adel-assets```  therefor ```assets_dir_name``` will be ```adel-assets```.
-
+```assets_dest:```Your assets backup will move to this location on the host.
 
 ### Backup Host ENV
 
@@ -105,9 +95,9 @@ volumes:
 
 ```backup_host_pass:``` Your Backup server password.
 
-```db_backuphost_dir:``` Your database Backup directory on the Backup server.
+```backup_host_dir:``` Your backup location on the backup server, example ```/backup/test/```
 
-```assets_backuphost_dir:``` Your assets directory on the Backup server.
+```backup_dest:``` Your backup directory location on the host. this env will be used for compressing backup.
 
 
 ### Other ENV
@@ -117,6 +107,12 @@ volumes:
 ```GREEN, RED, NC:``` Colors.
 
 ```slack_url:``` Slack webhook for sending an alert to Slack.
+
+```discord_url:``` Discord webhook for sending an alert to Discord.
+
+> **Note**
+> 
+> You can use both of them or only one of them webhook to send alerts.
 
 
 # Contributing
