@@ -6,7 +6,7 @@
 - [Prerequisites](https://github.com/adel-bz/MySQL-Backup-Script#prerequisites)
 - [Installation](https://github.com/adel-bz/MySQL-Backup-Script#installation)
 - [Usage](https://github.com/adel-bz/MySQL-Backup-Script#usage)
-- Environments
+- [Environment](https://github.com/adel-bz/MySQL-Backup-Script#environment)
 - [Contributing](https://github.com/adel-bz/MySQL-Backup-Script#contributing)
 
 # Introduction
