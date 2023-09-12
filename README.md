@@ -10,12 +10,13 @@
 - [Contributing](https://github.com/adel-bz/MySQL-Backup-Script#contributing)
 
 # Introduction
-The MySQL Backup Script is a versatile and efficient tool for automating MySQL database backups. It simplifies the process of creating regular backups, ensuring the safety and integrity of your valuable data. Whether you're a small business owner, a developer, or a system administrator, this script can help you automate your backup procedures with ease.
+The MySQL Backup Script is a versatile and efficient tool for automating MySQL database backups and project assets files. It simplifies the process of creating regular backups, ensuring the safety and integrity of your valuable data. Whether you're a small business owner, a developer, or a system administrator, this script can help you automate your backup procedures with ease.
 
 ![Screenshot from 2023-09-09 10-51-44](https://github.com/adel-bz/MySQL-Backup-Script/assets/45201934/41bdac69-2d01-4f76-b212-d07795474684)
 
 # Features
 - Automated MySQL database backups.
+- Automated project's assets backups.
 - Configurable backup schedules.
 - Backup compression to save storage space.
 - Support for local and remote backup destinations.
@@ -28,7 +29,7 @@ Before using the MySQL Backup Script, ensure you have the following prerequisite
 
 - A Linux-based operating system (e.g., Ubuntu, CentOS).
 - Bash shell (usually pre-installed on Linux systems).
-- MySQL or MariaDB installed and configured.
+- MySQL or MariaDB installed and configured. (as a Docker container)
 - FTP server (Backup server) for remote backups.
 
 # Installation
@@ -44,7 +45,7 @@ git clone https://github.com/adel-bz/MySQL-Backup-Script.git
 ```
 cd MySQL-Backup-Script
 ```
-3. Review and edit the .env file to configure your backup settings, including database credentials, backup location, schedule, and notification preferences.
+3. Review and edit the [.env](https://github.com/adel-bz/MySQL-Backup-Script#environment) file to configure your backup settings, including database credentials, backup location, schedule, and notification preferences.
 
 4. Make the script executable:
    
@@ -56,6 +57,9 @@ chmod +x backup.sh
 ```
 0 0 * * * /path/to/MySQL-Backup-Script/backup.sh
 ```
+You can use the below link to write a schedule for running cronjob.
+
+https://crontab.guru/
 
 # Usage
 Once configured, the MySQL Backup Script will run automatically according to your specified schedule. You can also run manual backups by executing:
