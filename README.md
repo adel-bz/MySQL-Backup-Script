@@ -20,6 +20,7 @@ The MySQL Backup Script is a versatile and efficient tool for automating MySQL d
 - Automated project's assets backups.
 - Configurable backup schedules.
 - Backup compression to save storage space.
+- Removing old backups automatically.
 - Support for local and remote backup destinations.
 - Alert notifications for backup status.
 - Highly customizable through environment variables.
