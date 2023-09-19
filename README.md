@@ -12,7 +12,8 @@
 # Introduction
 The MySQL Backup Script is a versatile and efficient tool for automating MySQL database backups and project assets files. It simplifies the process of creating regular backups, ensuring the safety and integrity of your valuable data. Whether you're a small business owner, a developer, or a system administrator, this script can help you automate your backup procedures with ease.
 
-![image](https://github.com/adel-bz/MySQL-Backup-Script/assets/45201934/63c39960-c7f0-4577-a3d1-8c836c7b1cc1)
+![Screenshot from 2023-09-12 12-11-04](https://github.com/adel-bz/MySQL-Backup-Script/assets/45201934/1b118729-cca5-4fc1-8a8e-846325ff2a66)
+
 
 
 # Features
